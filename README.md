@@ -34,16 +34,16 @@ DNS.2 = *localhost
 - Repositório de Certificados: Autoridades de Certificação Raiz Confiáveis
 - Confirme se o certificado foi instalado indo em Painel de Controle > Gerenciar Certificados de Usuário > Autoridades de Certificação Raiz Confiáveis > Certificados
 
-6 - Acessar o arquivo `C:\xampp\apache\conf\extra\httpd-ssl.conf` e alterar/incluir as linhas abaixo para:
-- SSLCertificateFile "conf/ssl.crt/server.crt"
-- SSLCertificateKeyFile "conf/ssl.key/server.key"
-
 fonte: https://www.youtube.com/watch?v=g8jxVI18WZ0
 
 ## Configurações importantes para utilizar SSL com Virtual Host:
 1 - Acessar o arquivo `C:\xampp\apache\conf\extra\httpd-vhosts.conf` e alterar/incluir as linhas abaixo para:
 - SSLCertificateFile C:/xampp/apache/conf/ssl.crt/server.crt
 - SSLCertificateKeyFile C:/xampp/apache/conf/ssl.key/server.key
+
+2 - Acessar o arquivo `C:\xampp\apache\conf\extra\httpd-ssl.conf` e alterar/incluir as linhas abaixo para:
+- SSLCertificateFile "conf/ssl.crt/server.crt"
+- SSLCertificateKeyFile "conf/ssl.key/server.key"
 
 # Dica bônus
 - Se você estiver utilizando Virtual Host e ele não estiver funcionando, acesse o arquivo `C:\xampp\apache\conf\extra\httpd-ssl.conf` e altere o Listen para a mesma porta do virtual Host 
