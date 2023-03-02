@@ -45,5 +45,5 @@ fonte: https://www.youtube.com/watch?v=g8jxVI18WZ0
 - SSLCertificateFile "conf/ssl.crt/server.crt"
 - SSLCertificateKeyFile "conf/ssl.key/server.key"
 
-# Dica bônus
+## Dica bônus
 - Se você estiver utilizando Virtual Host e ele não estiver funcionando, acesse o arquivo `C:\xampp\apache\conf\extra\httpd-ssl.conf` e altere o Listen para a mesma porta do virtual Host 
